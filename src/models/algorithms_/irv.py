@@ -3,12 +3,13 @@
 # http://stackoverflow.com/questions/5762671/list-sorting-modify-problem
 #
 # Modified by Waseem Ahmad (waseem@rice.edu) to adapt to Owlection
-
-
+import os
 import random
 import logging
 
 # Candidates:
+from models.webapputils import JINJA_ENV
+
 candidates = ['John', 'Max', 'Philip', 'Eric', 'Jane']
 
 def simul_ballots(num_voters):
@@ -184,6 +185,9 @@ def run_the_rounds(ballots):
         if majority:
             break
 
+        if not counts: # An election where no ballots were cast.
+            break
+
     return rounds
 
 def gen_ballots(file_name):
@@ -199,7 +203,21 @@ if __name__ == '__main__':
 
     pass
     # ballots = simul_ballots(20)
-    #
+    # rounds = run_the_rounds(ballots)
+    # email_message = JINJA_ENV.get_template('email_report.html')
+    # html = email_message.render(positions=[{
+    #     'id': 43560,
+    #     'type': "Ranked-Choice",
+    #     'name': 'Results Test',
+    #     'write_in_slots': 0,
+    #     'vote_required': False,
+    #     'candidates': candidates,
+    #     'description': 'To test out the email template',
+    #     'rounds': rounds}])
+    # with open('test.html', 'w+') as f:
+    #     f.write(html)
+    #     f.close()
+
     # while True:
     #
     #     print "* Votes:"
