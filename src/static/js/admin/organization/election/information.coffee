@@ -302,7 +302,7 @@ class LinkModal
 
     load: (id) ->
         host = window.location.host
-        @linkHref = "http://#{host}/vote/cast-ballot?id=#{id}"
+        @linkHref = "https://#{host}/vote/cast-ballot?id=#{id}"
         linkText = $('<a>', 'href': @linkHref).text(@linkHref)
         @link.text(@linkHref)
         @copyLink.attr('data-clipboard-text', @linkHref)

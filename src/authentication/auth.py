@@ -112,7 +112,7 @@ class LogoutHandler(webapp2.RequestHandler):
     def get(self):
         """Logs out the user from CAS."""
         app_url = self.request.headers.get('host', 'no host')    # URL of the app itself
-        service_url = 'http://%s/authenticate/logout-response' % app_url
+        service_url = 'https://%s/authenticate/logout-response' % app_url
         self.redirect(CAS_SERVER + '/cas/logout?service=' + service_url)
 
 
@@ -140,7 +140,7 @@ def require_login(request_handler):
     """
     destination_url = request_handler.request.url
     app_url = request_handler.request.headers.get('host', 'no host')    # URL of the app itself
-    service_url = 'http://%s/authenticate/login-response' % app_url
+    service_url = 'https://%s/authenticate/login-response' % app_url
     cas_url = CAS_SERVER + '/cas/login?service=' + service_url + '?destination=' + destination_url
     request_handler.redirect(cas_url, abort=True)
 

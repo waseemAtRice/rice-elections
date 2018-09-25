@@ -316,7 +316,7 @@
     LinkModal.prototype.load = function(id) {
       var host, linkText;
       host = window.location.host;
-      this.linkHref = "http://" + host + "/vote/cast-ballot?id=" + id;
+      this.linkHref = "https://" + host + "/vote/cast-ballot?id=" + id;
       linkText = $('<a>', {
         'href': this.linkHref
       }).text(this.linkHref);

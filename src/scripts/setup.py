@@ -11,22 +11,22 @@ def main():
     brown = models.Organization(name='Brown College',
                                 description='The best residential college.',
                                 image='/static/img/who/brown-college.png',
-                                website='http://brown.rice.edu')
+                                website='https://brown.rice.edu')
     brown.put()
     mcmurtry = models.Organization(name='McMurtry College',
                                 description='Not the best residential college.',
                                 image='/static/img/who/mcmurtry-college.png',
-                                website='http://mcmurtry.rice.edu')
+                                website='https://mcmurtry.rice.edu')
     mcmurtry.put()
     baker = models.Organization(name='Baker College',
                                 description='Not the best residential college.',
                                 image='/static/img/who/mcmurtry-college.png',
                                 carousel_show_name=False,
-                                website='http://baker.rice.edu')
+                                website='https://baker.rice.edu')
     baker.put()
     martel = models.Organization(name='Martel College',
                                 description='Best deck.',
-                                website='http://martel.rice.edu')
+                                website='https://martel.rice.edu')
     martel.put()
 
     testing = models.Organization(name='Testing',

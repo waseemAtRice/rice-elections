@@ -36,19 +36,19 @@ class BallotHandler(webapp2.RequestHandler):
 
         #Dictionary of candidates images
 
-        candidate_images = {"Griffin Thomas": "http://sa.rice.edu/img/candidates2016/GriffinThomasPresident.jpg",
-                            "Joan Liu": "http://sa.rice.edu/img/candidates2016/JoanLiuPresident.jpg",
-                            "Hannah Todd": "http://sa.rice.edu/img/candidates2016/HannahToddEVP.jpg",
-                            "Brianna Singh": "http://sa.rice.edu/img/candidates2016/BriannaSinghEVP.jpg",
-                            "Justin Onwenu": "http://sa.rice.edu/img/candidates2016/JustinOnwenuEVP.jpg",
-                            "Komal Luthra": "http://sa.rice.edu/img/candidates2016/KomalLuthraIVP.jpg",
-                            "Sonal Pai": "http://sa.rice.edu/img/candidates2016/SonalPaiSec.jpg",
-                            "Maurice Frediere": "http://sa.rice.edu/img/candidates2016/MauriceFrediereTreasurer.jpg",
-                            "Iman Khan": "http://sa.rice.edu/img/candidates2016/ImanKhanRPC.jpg",
-                            "Jodie Ngheim": "http://sa.rice.edu/img/candidates2016/JodieNghiemRPC.jpg",
-                            "Kailan Shi": "http://sa.rice.edu/img/candidates2016/KailanShiRSVP.jpg",
-                            "Yasna Haghdoost": "http://sa.rice.edu/img/candidates2016/YasnaHaghdoostThresher.jpg",
-                            "Marcela Interiano": "http://sa.rice.edu/img/candidates2016/MarcelaInterianoUCourt.jpg"}
+        candidate_images = {"Griffin Thomas": "https://sa.rice.edu/img/candidates2016/GriffinThomasPresident.jpg",
+                            "Joan Liu": "https://sa.rice.edu/img/candidates2016/JoanLiuPresident.jpg",
+                            "Hannah Todd": "https://sa.rice.edu/img/candidates2016/HannahToddEVP.jpg",
+                            "Brianna Singh": "https://sa.rice.edu/img/candidates2016/BriannaSinghEVP.jpg",
+                            "Justin Onwenu": "https://sa.rice.edu/img/candidates2016/JustinOnwenuEVP.jpg",
+                            "Komal Luthra": "https://sa.rice.edu/img/candidates2016/KomalLuthraIVP.jpg",
+                            "Sonal Pai": "https://sa.rice.edu/img/candidates2016/SonalPaiSec.jpg",
+                            "Maurice Frediere": "https://sa.rice.edu/img/candidates2016/MauriceFrediereTreasurer.jpg",
+                            "Iman Khan": "https://sa.rice.edu/img/candidates2016/ImanKhanRPC.jpg",
+                            "Jodie Ngheim": "https://sa.rice.edu/img/candidates2016/JodieNghiemRPC.jpg",
+                            "Kailan Shi": "https://sa.rice.edu/img/candidates2016/KailanShiRSVP.jpg",
+                            "Yasna Haghdoost": "https://sa.rice.edu/img/candidates2016/YasnaHaghdoostThresher.jpg",
+                            "Marcela Interiano": "https://sa.rice.edu/img/candidates2016/MarcelaInterianoUCourt.jpg"}
         page_data["CandidatePictures"] = candidate_images
         
         # Serve the election the user has requested
