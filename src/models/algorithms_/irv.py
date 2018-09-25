@@ -1,6 +1,6 @@
 #
 # Below code from StackOverflow.
-# http://stackoverflow.com/questions/5762671/list-sorting-modify-problem
+# https://stackoverflow.com/questions/5762671/list-sorting-modify-problem
 #
 # Modified by Waseem Ahmad (waseem@rice.edu) to adapt to Owlection
 import os

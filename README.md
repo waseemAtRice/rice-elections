@@ -5,7 +5,7 @@ A secure, user friendly, and transparent way of voting for elections within diff
 
 Website
 -------
-Visit the website at http://owlection.appspot.com
+Visit the website at https://owlection.appspot.com
 
 
 Bug tracker
@@ -16,4 +16,4 @@ Have a bug? Please create an issue here on GitHub! Also, when filing please make
 Authors
 -------
 * [Waseem Ahmad](http://www.waseemahmad.com/)
-* [Andrew Capshaw](http://capshaw.me/)
+* [Andrew Capshaw](https://capshaw.me/)
